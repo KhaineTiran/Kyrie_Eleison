@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = steppe_horde
+government_rank = 2
+primary_culture = mongol
+religion = vajrayana
+technology_group = muslim
+capital = 416 # Tabriz
+add_accepted_culture = persian
+
+1441.1.1 = {
+	monarch = {
+		name = "Arpa"
+		monarch_name = "Arpa"
+		dynasty = "Tolui"
+		birth_date = 1410.1.1
+		death_date = 1465.1.1
+		adm = 1
+		dip = 1
+		mil = 2
+	}
+}

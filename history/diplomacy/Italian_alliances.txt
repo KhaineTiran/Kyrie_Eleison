@@ -1,0 +1,8 @@
+
+vassal = {
+	first = PAP
+	second = URB
+	start_date = 1443.1.1
+	end_date = 1626.1.1
+}
+
