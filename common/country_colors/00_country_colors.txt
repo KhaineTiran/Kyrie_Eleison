@@ -6,6 +6,28 @@
     # color3= { 70 50 40  } #Up to 10% -> try map color here
 # }
 
+#Antioch
+
+NTI = {
+    color1= { 80 20 60  }
+    color2= { 70 15 71 }
+    color3= { 61 8 81  }
+}
+#Edessa
+NTI = {
+    color1= { 131 138 116  }
+    color2= { 129 177 125  }
+    color3= { 131 101 85  }
+}
+
+# Cilicia
+ARM = {
+    color1= { 128 170 63  }
+    color2= { 166 72 57  }
+    color3= { 17 16 260  }
+}
+
+
 # Sweden FIXED
 SWE = {
     color1= { 62 122 189  }

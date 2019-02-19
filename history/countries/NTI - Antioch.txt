@@ -1,0 +1,20 @@
+government = theocracy
+add_government_reform = leading_clergy_reform
+government_rank = 1
+primary_culture = greek
+religion = orthodox
+technology_group = eastern
+add_accepted_culture = al_suryah_arabic
+capital = 2313	# Antioch
+fixed_capital = 2313  # Cannot move capital away from this province & no power cost to move to it
+add_army_professionalism = 0.05
+
+1431.10.15 = {
+	monarch = {
+		name = "Micheal IV"
+		birth_date = 1401.8.1
+		adm = 2
+		dip = 3
+		mil = 2
+	}
+}

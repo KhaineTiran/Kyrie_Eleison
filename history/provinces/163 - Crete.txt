@@ -1,7 +1,7 @@
 #163 - Crete
 
-owner = BYZ
-controller = BYZ
+owner = TEM
+controller = TEM
 culture = greek
 religion = orthodox
 capital = "Heraklion"
@@ -13,6 +13,7 @@ base_manpower = 3
 is_city = yes
 add_core = BYZ
 add_core = CRT
+add_core = TEM
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

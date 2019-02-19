@@ -1,7 +1,7 @@
 # 173 Labourd - Principal cities: Bayonne (can't change file name)
 
-owner = NAV
-controller = NAV
+owner = AQT
+controller = AQT
 capital = "Bayonne"
 is_city = yes
 culture = basque
@@ -13,6 +13,7 @@ trade_goods = wine
 base_manpower = 4
 add_core = NAV
 add_core = GUY
+add_core = AQT
 fort_15th = yes
 
 
