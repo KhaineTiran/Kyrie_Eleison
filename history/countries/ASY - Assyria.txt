@@ -1,0 +1,17 @@
+government = monarchy
+add_government_reform = autocracy_reform 
+primary_culture = assyrian
+religion = coptic
+technology_group = eastern
+capital = 2310	# Assur
+
+1431.1.1 = {
+	monarch = {
+		name = "Sagron"
+		dynasty = "Isaac"
+		birth_date = 1406.10.15
+		adm = 3
+		dip = 6
+		mil = 6
+	}
+}

@@ -1,0 +1,98 @@
+#Country Name: Please see filename.
+
+graphical_culture = easterngfx
+
+color = { 147  146  106 }
+
+revolutionary_colors = { 5  13  8 }
+
+historical_idea_groups = {
+	offensive_ideas
+	religious_ideas
+	defensive_ideas
+	trade_ideas
+	spy_ideas
+	economic_ideas
+	diplomatic_ideas
+	administrative_ideas
+}
+
+historical_units = {
+	bardiche_infantry
+	eastern_knights
+	slavic_stradioti
+	eastern_militia
+	muscovite_musketeer
+	muscovite_caracolle
+	muscovite_soldaty
+	muscovite_cossack
+	russian_petrine
+	russian_lancer
+	russian_green_coat
+	russian_cuirassier
+	eastern_skirmisher
+	eastern_uhlan
+	eastern_carabinier
+	russian_mass
+}
+
+monarch_names = {
+	"David #0" = 20
+	"Georgis #0" = 20
+	"Isaac #4" = 15
+	"Ammo #2" = 15
+	"Khoshaba #3" = 15
+	"Abbas #1" = 15
+	"Akram #1" = 15
+	"Sagron #1" = 10
+	"Ashur #0" = 10
+	"Adam #0" = 10
+	"Gewargis #0" = 10
+	"Yousip #0" = 0
+	"Narsai #0" = 0
+	"Sabrisho #0" = 0
+	"Nimrud #0" = 0
+	"Bilgamish #0" = 0
+	"Ninsun #0" = 0
+	"Atur #0" = 0
+	"Sada #0" = 0
+	"Hammurabi #0" = 0
+	"Ninev #0" = 0
+	"Yahballaha #0" = 0
+	"Thoma #0" = 0
+	"Zaya #0" = 0
+	"Ramin #0" = 0
+	"Naramsin #0" = 0
+	"Eshai #0" = 0
+	"Petros #0" = 0
+	"Samano #0" = 0
+	"Yoel #0" = 0
+	"Naramsin #0" = 0
+	"Sennacherib #0" = 0
+
+	
+	"Helena #0" = -1
+	"Nineveh #0" = -1
+	"Dinah #0" = -1
+	"Deena #0" = -1
+	"Martha #0" = -1
+	"Waleeta #0" = -1
+	"Bartilla #0" = -1
+	"Bakhdida #0" = -1
+	"Surma #0" = -1
+	"Larsa #0" = -1
+	"Khava #0" = -1
+	"Ishtar #0" = -1
+}
+
+leader_names = { 
+	Gabriel Yacob Yaqub Eshaya Nimrud Daniel Yousip Dinkha Eshai Ishai Moushe Thoma Tulmay Yahballaha Dadisho Dadishu Narsai Ishoyahb Aho Isho Sharbel Sharo Sabrisho Sabrishu Belo Eliya Shalim Bilgamish Hammurabi Sinharib Sennacherib Ninsun Adam Ashurdan Ninev Nineb Sada Shima Ezekiel Atur Goru Patu Beniel Matti Mari Hedo Haydoo Odisho Odishu Eshu Esho Ilishu Shalita
+}
+
+ship_names = {
+	Ashur
+	Sargon 
+	Akkad
+	Ashurbanipal
+	"Adad-nirari"
+}
