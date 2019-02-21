@@ -1,3 +1,6 @@
 ﻿l_english:
-  syriac_culture_group:0 "Syriac culture group"
+  syriac_culture_group:0 "Syriac"
   assyrian:0 "Assyrian"
+  egyptian_culture_group:0 "Egyptian"
+  arabic_culture_group:0 "Arabic"
+  turkish_culture_group:0 "Turkish"
