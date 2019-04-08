@@ -91,7 +91,7 @@ byz_western = {
 	recover_the_balkans = {
 		icon = mission_eastern_european_city
 		required_missions = { recover_greece }
-		position = 3
+		position = 4
 		provinces_to_highlight = {
 			area = bulgaria_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -363,9 +363,9 @@ byz_east = {
 	}
 }
 
-byz_generic_slot_5 = {
+the_empire_restored = {
 	slot = 5
-	generic = no #Needs to be replaced by similar missions for Purple Phoenix
+	generic = no 
 	ai = yes
 	potential = {
 		NOT = { map_setup = map_setup_random }
@@ -374,9 +374,9 @@ byz_generic_slot_5 = {
 	}
 	has_country_shield = yes
 	
-	reestablish_the_theme_system = {
+	the_empire_restored = {
 		icon = mission_non-western_cavalry_raid
-		required_missions = { recover_the_coast_of_asia_minor }
+		required_missions = { recover_the_coast_of_asia_minor recover_the_balkans}
 		position = 3
 		provinces_to_highlight = {
 			OR = {
@@ -489,14 +489,10 @@ byz_generic_slot_5 = {
 				151 = {
 					add_base_tax = 4
 					add_base_production = 4
-					add_base_manpower = 3
+					add_base_manpower = 4
 				}
+				add_stability = 1
 				set_global_flag = constantinople_restored
-			}
-						
-			add_country_modifier = {
-				name = "the_theme_system"
-				duration = -1
 			}
 		}
 	}
