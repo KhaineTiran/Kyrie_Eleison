@@ -1,0 +1,453 @@
+hun_north_group = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = HUN
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	
+	hun_vassal_states = {
+		icon = mission_unite_home_region
+		position = 1
+		
+		provinces_to_highlight = {
+			area = wallachia_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			wallachia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			serbia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			rascia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			bosnia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			croatia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	hun_vassal_states_three = {
+		icon = mission_eastern_european_city
+		position = 2
+
+		required_missions = { 
+			hun_vassal_states_four
+		}
+		
+		provinces_to_highlight = {
+			OR = {
+				area = serbia_area
+				area = rascia_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			serbia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			rascia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_dip_power = 100
+			serbia_area = {
+				add_province_modifier = {
+					name = "hun_moldavia_mod"
+					duration = 10950
+				}
+			}
+			rascia_area = {
+				add_province_modifier = {
+					name = "hun_moldavia_mod"
+					duration = 10950
+				}
+			}
+		}
+	}
+	
+}
+
+hun_south_group = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = HUN
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	hun_vassal_states_four = {
+		icon = mission_cannons_firing
+		position = 2
+		
+		provinces_to_highlight = {
+			OR = {
+				area = bosnia_area
+				area = croatia_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			bosnia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			croatia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_dip_power = 100
+			bosnia_area = {
+				add_province_modifier = {
+					name = "hun_moldavia_mod"
+					duration = 10950
+				}
+			}
+			croatia_area = {
+				add_province_modifier = {
+					name = "hun_moldavia_mod"
+					duration = 10950
+				}
+			}
+		}
+	}
+
+	enforce_the_Polish_union = {
+		icon = mission_teutonic_knights
+		position = 3
+		required_missions = { 
+			hun_vassal_states_three
+			hun_vassal_states_two
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = wallachia_area
+				area = bosnia_area
+				area = croatia_area
+				area = east_adriatic_coast_area
+				area = rascia_area
+			}
+			NOT = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		trigger = {
+			wallachia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+			bosnia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+			croatia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+			east_adriatic_coast_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+			rascia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+		}
+		effect = {		
+			add_country_modifier = {
+				name = "royal_hungary"
+				duration = 5475
+			}
+			if = {
+				limit = {
+					government = monarchy
+					exists = POL
+					is_subject = no
+					religion_group = christian
+					POL = {
+						is_subject = no
+						government = monarchy
+					}
+				}
+				add_casus_belli = {
+					type = cb_restore_personal_union
+					months = 300
+					target = POL
+				}
+			}
+			else = {
+				malopolska_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+				mazovia_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+				west_prussia_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			if = {
+				limit =  {
+					NOT = {
+						NOV = {
+							OR = {
+								alliance_with = ROOT
+								is_subject_of = ROOT
+							}
+						}
+					}
+				}
+				bulgaria_area = {
+					limit = {
+						NOT = { is_permanent_claim = ROOT }
+						NOT = { is_core = ROOT	}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+	
+	hun_vassal_states_two = {
+		icon = mission_eastern_european_city
+		position = 3		
+		required_missions = { 
+			hun_vassal_states_four
+		}
+		provinces_to_highlight = {
+			area = moldavia_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			moldavia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			moldavia_area = {
+				add_province_modifier = {
+					name = "hun_moldavia_mod"
+					duration = 10950
+				}
+			}
+		}
+	}
+	
+	
+	
+	hun_ottoman_borders_three = {
+		icon = mission_conquer_5_states
+		required_missions = { hun_ottoman_borders }
+		position = 6
+		
+		provinces_to_highlight = {
+			area = bulgaria_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			bulgaria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_adm_power = 100
+			add_prestige = 10
+			thrace_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+hun_ottoman_group = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = HUN
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	
+	hun_ottoman_borders = {
+		icon = mission_non-western_soldiers
+		required_missions = { }
+		position = 5
+		
+		trigger = {
+			if = {
+				limit = {
+					TUR = {
+						any_owned_province = {
+							region = balkan_region
+						}
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = hun_ottoman_borders.tooltip
+					calc_true_if = {
+						amount = 3
+						all_owned_province = {
+							fort_level = 1
+							any_neighbor_province = {
+								owned_by = TUR
+							}
+						}
+					}
+				}
+				else = {
+					any_owned_province = {
+						fort_level = 3
+					}
+				}
+			}
+		}
+		
+		effect = {
+			macedonia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			bulgaria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	hun_ottoman_borders_two = {
+		icon = mission_conquer_5_states
+		required_missions = { hun_ottoman_borders }
+		position = 6
+		
+		provinces_to_highlight = {
+			area = macedonia_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			macedonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_adm_power = 100
+			add_prestige = 10
+		}
+	}
+	
+	hun_ottoman_borders_four = {
+		icon = mission_ottoman_harem
+		required_missions = { 
+		hun_ottoman_borders_two 
+		hun_ottoman_borders_three
+		}
+		position = 7
+		
+		provinces_to_highlight = {
+			area = thrace_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			thrace_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			add_adm_power = 100
+			add_prestige = 30
+			add_country_modifier = {
+				name = "hun_constantinople"
+				duration = 7300
+			}
+			northern_greece_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+			morea_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+		}
+	}
+}
