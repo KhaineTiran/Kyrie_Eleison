@@ -1,4 +1,4 @@
-00_BYZ_ideas = {
+AA_BYZ_ideas = {
 	start = {
 		advisor_cost = -0.10
 		tolerance_own = 3

@@ -63,6 +63,7 @@ hun_north_group = {
 
 		required_missions = { 
 			hun_vassal_states_four
+			hun_vassal_states
 		}
 		
 		provinces_to_highlight = {
@@ -115,7 +116,7 @@ hun_south_group = {
 
 	hun_vassal_states_four = {
 		icon = mission_cannons_firing
-		position = 2
+		position = 1
 		
 		provinces_to_highlight = {
 			OR = {
@@ -153,6 +154,34 @@ hun_south_group = {
 		}
 	}
 
+	hun_vassal_states_two = {
+		icon = mission_eastern_european_city
+		position = 2		
+		required_missions = { 
+			hun_vassal_states_four
+		}
+		provinces_to_highlight = {
+			area = moldavia_area
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
+			moldavia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		
+		effect = {
+			moldavia_area = {
+				add_province_modifier = {
+					name = "hun_moldavia_mod"
+					duration = 10950
+				}
+			}
+		}
+	}
+
 	enforce_the_Polish_union = {
 		icon = mission_teutonic_knights
 		position = 3
@@ -162,6 +191,7 @@ hun_south_group = {
 		}
 		provinces_to_highlight = {
 			OR = {
+				area = serbia_area
 				area = wallachia_area
 				area = bosnia_area
 				area = croatia_area
@@ -231,7 +261,7 @@ hun_south_group = {
 					}
 					add_permanent_claim = ROOT
 				}
-				west_prussia_area = {
+				central_poland_area = {
 					limit = {
 						NOT = { is_permanent_claim = ROOT }
 						NOT = { is_core = ROOT	}
@@ -250,7 +280,7 @@ hun_south_group = {
 						}
 					}
 				}
-				bulgaria_area = {
+				carinthia_area = {
 					limit = {
 						NOT = { is_permanent_claim = ROOT }
 						NOT = { is_core = ROOT	}
@@ -260,37 +290,7 @@ hun_south_group = {
 			}
 		}
 	}
-	
-	hun_vassal_states_two = {
-		icon = mission_eastern_european_city
-		position = 3		
-		required_missions = { 
-			hun_vassal_states_four
-		}
-		provinces_to_highlight = {
-			area = moldavia_area
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		
-		trigger = {
-			moldavia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		
-		effect = {
-			moldavia_area = {
-				add_province_modifier = {
-					name = "hun_moldavia_mod"
-					duration = 10950
-				}
-			}
-		}
-	}
-	
-	
-	
+
 	hun_ottoman_borders_three = {
 		icon = mission_conquer_5_states
 		required_missions = { hun_ottoman_borders }

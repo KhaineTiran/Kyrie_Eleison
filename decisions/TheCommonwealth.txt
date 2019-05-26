@@ -64,7 +64,6 @@ country_decisions = {
 			if = {
 				limit = { NOT = { accepted_culture = hungarian } }
 				add_accepted_culture = hungarian
-
 			}
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
@@ -78,7 +77,7 @@ country_decisions = {
 						NOT = { owned_by = HUN }
 						NOT = { owned_by = PLC }
 					}
-				
+				}
 				poland_region = {
 					add_permanent_claim = PLC
 				}
@@ -131,6 +130,7 @@ country_decisions = {
 		}
 		ai_importance = 400
 		do_not_integrate = HUN
+		}
 	}
 
 	lit_commonwealth = {
@@ -152,21 +152,21 @@ country_decisions = {
 				was_player = no
 			}
 			OR = {
-			ai = no
+				ai = no
 				AND = {
 					senior_union_with = POL
 					POL = { #This overlaps with allow for AI, is meant to negate do_not_integrate
-						NOT = { num_of_cities = 32 } #Keep this number the same as in allow. Original 22 + 10
+						NOT = { num_of_cities = 37 } #Keep this number the same as in allow. Original 27 + 10
 					}
 				}
 			}	
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 272	# Vilna
-				province_id = 276	# Minsk
-				province_id = 280	# Kiev
-				province_id = 1941	# Turov
+				province_id = 153				# Pest
+				province_id = 4128				# Sibiu
+				province_id = 162				# Zemplen
+				province_id = 1826				# Lika
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -174,16 +174,16 @@ country_decisions = {
 			}
 		}
 		allow = {
-			POL = { NOT = { num_of_cities = 32 } } #Keep this number the same as in potential. Original 22+10
+			POL = { NOT = { num_of_cities = 37 } } #Keep this number the same as in potential. Original 27+10
 			adm_tech = 10
 			is_subject = no
 			is_nomad = no
 			stability = 3
 			is_at_war = no
-			owns_core_province = 272				# Vilna
-			owns_core_province = 276				# Minsk
-			owns_core_province = 280				# Kiev
-			owns_core_province = 1941				# Turov
+			owns_core_province = 153				# Pest
+			owns_core_province = 4128				# Sibiu
+			owns_core_province = 162				# Zemplen
+			owns_core_province = 1826				# Lika
 			senior_union_with = POL
 			MAZ = { exists = no }
 		}
@@ -214,40 +214,17 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					white_ruthenia_area = {
+					carpathia_region = {
 						NOT = { owned_by = POL }
 						NOT = { owned_by = HUN }
 						NOT = { owned_by = PLC }
 					}
 				}
-				white_ruthenia_area = {
+				carpathia_region = {
 					add_permanent_claim = PLC
 				}
 			}
-			if = {
-				limit = {
-					lithuania_area = {
-						NOT = { owned_by = POL }
-						NOT = { owned_by = HUN }
-						NOT = { owned_by = PLC }
-					}
-				}
-				lithuania_area = {
-					add_permanent_claim = PLC
-				}
-			}
-			if = {
-				limit = {
-					pripyat_area = {
-						NOT = { owned_by = POL }
-						NOT = { owned_by = HUN }
-						NOT = { owned_by = PLC }
-					}
-				}
-				pripyat_area = {
-					add_permanent_claim = PLC
-				}
-			}
+			
 			random_owned_province = {
 				limit = { culture = hungarian }
 				add_base_tax = 1
@@ -293,10 +270,10 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 272	# Vilna
-				province_id = 276	# Minsk
-				province_id = 280	# Kiev
-				province_id = 1941	# Turov
+				province_id = 153	# Pest
+				province_id = 4128	# Sibiu
+				province_id = 162	# Zemplen
+				province_id = 1826	# Lika
 				province_id = 262	# Krakow
 				province_id = 257	# Warszawa
 				province_id = 43		# Danzig
@@ -313,10 +290,10 @@ country_decisions = {
 			is_nomad = no
 			stability = 3
 			is_at_war = no
-			owns_core_province = 272				# Vilna
-			owns_core_province = 276				# Minsk
-			owns_core_province = 280				# Kiev
-			owns_core_province = 1941				# Turov
+			owns_core_province = 153				# Pest
+			owns_core_province = 4128				# Sibiu
+			owns_core_province = 162				# Zemplen
+			owns_core_province = 1826				# Lika
 			owns_core_province = 262				# Krakow
 			owns_core_province = 257				# Warszawa
 			owns_core_province = 43					# Danzig

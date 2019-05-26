@@ -1,0 +1,11 @@
+1399.1.1 = { emperor = BOH }
+1419.8.16 = { emperor = BAV }
+1437.12.9 = { emperor = BAV }
+1452.1.1 = { emperor = BAV }
+1457.11.24 = { emperor = BAV }
+1519.1.12 = { emperor = BAV }
+1556.1.16 = { emperor = BAV }
+1740.12.22 = { emperor = BAV }
+1745.1.21 = { emperor = BAV }
+1765.1.1 = { emperor = BAV }
+1806.7.12 = { emperor = --- } 

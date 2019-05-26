@@ -1,8 +1,9 @@
 #Minorca
 
-owner = CAT		# Alfons V of Aragon
-controller = CAT
+owner = TUN
+controller = TUN
 add_core = CAT
+add_core = TUN
 add_core = MJO
 culture = catalan
 religion = catholic

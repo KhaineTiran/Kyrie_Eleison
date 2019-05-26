@@ -1,9 +1,10 @@
 #333 - The Baleares
 
-owner = CAT
-controller = CAT
+owner = TUN
+controller = TUN
 add_core = CAT
 add_core = MJO
+add_core = TUN
 culture = catalan
 religion = catholic
 hre = no

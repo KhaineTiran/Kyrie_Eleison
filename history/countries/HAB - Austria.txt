@@ -1,0 +1,21 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = austrian
+religion = catholic
+technology_group = western
+capital = 134 # Wien
+historical_friend = HUN
+historical_rival = BYZ
+historical_rival = FRA
+national_focus = ADM
+
+1444.11.11 = {
+	monarch = {
+		name = "(Interregnum)"
+		adm = 0
+		mil = 0
+		dip = 0
+		regent = yes
+	}
+}

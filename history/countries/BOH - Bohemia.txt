@@ -1,0 +1,32 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = czech
+religion = catholic
+elector = yes
+capital = 266 # Praha
+technology_group = western
+add_accepted_culture = saxon
+add_army_professionalism = 0.1
+
+1433.10.19 = {
+	monarch = {
+		name = "Václav VI"
+		dynasty = "von Luxemburg"
+		birth_date = 1408.11.11
+		adm = 2
+		dip = 2
+		mil = 0
+	}
+	heir = {
+		name = "Wenceslaus"
+		monarch_name = "Wenceslaus II"
+		dynasty = "von Luxemburg"
+		birth_date = 1432.12.18
+		death_date = 1458.10.31
+		claim = 95
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+
+}
