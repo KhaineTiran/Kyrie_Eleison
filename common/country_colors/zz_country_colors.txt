@@ -14,7 +14,7 @@ NTI = {
     color3= { 61 8 81  }
 }
 #Edessa
-NTI = {
+EDE = {
     color1= { 131 138 116  }
     color2= { 129 177 125  }
     color3= { 131 101 85  }
