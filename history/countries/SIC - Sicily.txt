@@ -1,0 +1,32 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = western
+government_rank = 2
+religion = catholic
+primary_culture = sicilian
+add_accepted_culture = neapolitan
+historical_rival = BYZ
+historical_rival = TUN
+capital = 125	# Palermo
+
+
+1444.1.28 = {
+	monarch = { 
+		name = "Frederick IV"
+		dynasty = "Hohenstaufen"
+		dip = 3
+		mil = 5
+		adm = 2
+	}
+	heir = {
+		name = "Philip "
+		monarch_name = "Philip III"
+		dynasty = "Hohenstaufen"
+		birth_date = 1432.12.18
+		death_date = 1448.10.31
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 3
+	}
+}

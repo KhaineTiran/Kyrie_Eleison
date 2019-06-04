@@ -7,3 +7,25 @@ religion = catholic
 technology_group = western
 capital = 174	# aquitaine
 fixed_capital = 174 # Cannot move capital away from this province & no power cost to move to it
+
+1429.11.6 = { #Coronation
+	monarch = {
+		name = "Henri I"
+		dynasty = "Plantagenet"
+		birth_date = 1401.12.6
+		adm = 5
+		dip = 6
+		mil = 1
+	}
+	heir = {
+		name = "William"
+		monarch_name = "William I"
+		dynasty = "Plantagenet"
+		birth_date = 1420.12.18
+		death_date = 1448.10.31
+		claim = 95
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+}

@@ -1,10 +1,10 @@
-#4309 - Aydin
+#4309 - Tralles
 
 owner = BYZ
 controller = BYZ
 culture = greek
 religion = orthodox
-capital = "Aydin"
+capital = "Tralles"
 trade_goods = salt 
 hre = no
 base_tax = 2

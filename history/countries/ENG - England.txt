@@ -1,0 +1,37 @@
+government = monarchy
+add_government_reform = english_monarchy
+mercantilism = 25
+technology_group = western
+primary_culture = english
+add_accepted_culture = gascon
+add_accepted_culture = normand
+religion = catholic
+capital = 236 # London
+national_focus = DIP
+
+
+1409.11.6 = { #Coronation
+	monarch = {
+		name = "Richard III"
+		dynasty = "Lancaster"
+		birth_date = 1381.12.6
+		adm = 3
+		dip = 2
+		mil = 4
+	}
+	heir = {
+		name = "Arthur "
+		monarch_name = "Arthur I"
+		dynasty = "Lancaster"
+		birth_date = 1402.12.18
+		death_date = 1448.10.31
+		claim = 95
+		adm = 5
+		dip = 6
+		mil = 6
+	}
+}
+
+#1434.1.1 = { leader = {	name = "Richard Neville"	type = general	fire = 3	shock = 3	manuever = 3	siege = 0	death_date = 1460.12.31 } }
+
+1435.1.1 = { leader = {	name = "Richard Plantagenet"	type = general	fire = 2	shock = 4	manuever = 3	siege = 0	death_date = 1460.12.30 } }

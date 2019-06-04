@@ -17,4 +17,15 @@ capital = 358	# Alexandria
 		dip = 3
 		mil = 5
 	}
+	heir = {
+		name = "Gilbert"
+		monarch_name = "Gilbert II"
+		dynasty = "La Fayette"
+		birth_date = 1412.12.18
+		death_date = 1448.10.31
+		claim = 95
+		adm = 2
+		dip = 2
+		mil = 1
+	}
 }
