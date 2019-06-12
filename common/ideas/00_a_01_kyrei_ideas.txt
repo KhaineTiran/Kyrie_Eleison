@@ -36,3 +36,164 @@ BYZ_ideas = {
 		global_missionary_strength = 0.03
 	}
 }
+
+SIC_ideas = {
+	start = {
+		global_trade_power = 0.1
+		galley_power = 0.2
+	}
+	
+	bonus = {
+		development_cost = -0.1
+	}
+	
+	trigger = {
+		tag = SIC
+	}
+	free = yes
+	
+	last_hohenstaufen_seat = {
+		legitimacy = 1
+	}
+	norman_legacy = {
+		infantry_power = 0.1
+	}
+	sicilian_grain = {
+		global_trade_goods_size_modifier = 0.05
+		global_manpower_modifier = 0.10
+	}
+	history_of_occupation = {
+		tolerance_heretic = 1
+		tolerance_heathen = 1
+	}
+	the_kings_of_wine = {
+		stability_cost_modifier = -0.1
+	}
+	
+	the_heart_of_the_mediterranean = {
+		naval_forcelimit_modifier = 0.25
+	}
+	trinacria = {
+		prestige = 1
+	}
+}
+
+ILK_ideas = {
+	start = {
+		cavalry_power = 0.2
+		cavalry_cost = -0.15
+	}
+	bonus = {
+		cavalry_flanking = 0.5
+	}
+	trigger = {
+		tag = ILK
+	}
+	free = yes
+	ilk_restored_ilkhanate = {
+		legitimacy = 1
+		horde_unity = 1
+	}
+	ilk_many_religions = {
+		tolerance_heathen = 2
+	}
+	ilk_persian_language_at_court = {
+		num_accepted_cultures = 1
+	}
+	ilk_yam_networks = {
+		movement_speed = 0.15
+		envoy_travel_time = -0.25
+	}
+	ilk_mongol_peace = {
+		years_of_nationalism = -5
+	}
+	ilk_patronize_observatories = {
+		technology_cost = -0.05
+	}
+	ilk_recruit_turkoman_gunners = {
+		fire_damage = 0.1
+	}
+}
+
+ASY_ideas = {
+	start = {
+		development_cost = -0.1
+		legitimacy = 1
+	}
+	
+	bonus = {
+		stability_cost_modifier = -0.10
+	}
+	
+	trigger = {
+		tag = ASY
+	}
+	free = yes
+	
+	love_thy_neighbour = {
+		tolerance_heretic = 1
+		tolerance_heathen = 1
+	}
+	oldest_of_people = {
+		prestige = 1
+	}
+	the_heirs_of_sargon = {
+		discipline = 0.05
+		global_manpower_modifier = 0.10
+	}
+	a_hardy_people = {
+		enemy_core_creation = 0.5
+	}
+	ancient_tradions = {
+		diplomatic_reputation = 1
+	}
+	
+	traders_of_the_orient = {
+		global_trade_power = 0.1
+	}
+	church_of_the_east = {
+		tolerance_own = 3
+	}
+}
+
+ARM_ideas = {
+	start = {
+		war_exhaustion = -0.02
+		recover_army_morale_speed = 0.05
+	}
+
+	bonus = {
+		hostile_attrition = 1
+	}
+	
+	trigger = {
+		OR = {
+			tag = ARM
+			tag = MLK
+			tag = CIL
+		}
+	}
+	free = yes		#will be added at load.
+	
+	apostolic_church = {
+		global_missionary_strength = 0.02
+	}
+	land_reclamation = {
+		development_cost = -0.1
+	}
+	border_nation = {
+		diplomatic_reputation = 1
+	}
+	melikdom_organization = {
+		global_tax_modifier = 0.1
+	}
+	sygnakhs = {
+		global_regiment_cost = -0.1
+	}
+	nakharar_titles = {
+		army_tradition = 0.5
+	}
+	end_of_armenian_diaspora = {
+		production_efficiency = 0.1
+	}
+}

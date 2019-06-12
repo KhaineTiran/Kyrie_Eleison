@@ -1,0 +1,33 @@
+government = monarchy
+add_government_reform = feudalism_reform
+technology_group = eastern
+primary_culture = bulgarian
+religion = orthodox
+government_rank = 2
+historical_rival = BYZ
+capital = 150	# Sofia
+
+14010.2.16 = {
+	monarch = {
+		name = "Pater IV"
+		dynasty = "Asen"
+		birth_date = 1390.6.27		
+		adm = 2
+		dip = 5
+		mil = 5
+	}
+}
+
+1422.12.18 = {
+	heir = {
+		name = "Theodore"
+		monarch_name = "Theodore I"
+		dynasty = "Asen"
+		birth_date = 1412.12.18
+		death_date = 1448.10.31
+		claim = 95
+		adm = 3
+		dip = 3
+		mil = 2
+	}
+}
