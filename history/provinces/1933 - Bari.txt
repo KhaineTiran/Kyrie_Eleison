@@ -2,16 +2,16 @@
 
 owner = SIC
 controller = SIC
-culture = neapolitan 
-religion = catholic 
+culture = griko 
+religion = orthodox 
 hre = no 
-base_tax = 3 
-base_production = 3
+base_tax = 5 
+base_production = 5
 trade_goods = wine
-base_manpower = 2
+base_manpower = 6
 capital = "Bari"
 is_city = yes # Estimated 
-add_core = NAP
+add_core = GRI
 add_core = SIC
 
 

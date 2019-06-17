@@ -1,0 +1,12 @@
+government = monarchy
+add_government_reform = autocracy_reform
+government_rank = 1
+primary_culture = griko
+religion = orthodox
+technology_group = eastern
+historical_rival = SIC
+historical_rival = NAP
+capital = 1993 
+
+
+

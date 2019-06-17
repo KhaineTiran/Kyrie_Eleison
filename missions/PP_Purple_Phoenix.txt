@@ -971,7 +971,7 @@ byz_pp_east = {
 		}
 	}
 	
-	reestablish_the_theme_system_pp = {
+	destruction_of_the_turks_pp = {
 		icon = mission_pf_map_table
 		position = 5
 		required_missions = { 
@@ -1060,7 +1060,7 @@ byz_pp_east = {
 	recover_crimea = {
 		icon = mission_galleys_in_port
 		required_missions = {
-			reestablish_the_theme_system_pp
+			destruction_of_the_turks_pp
 		}
 		provinces_to_highlight = {
 			OR = {

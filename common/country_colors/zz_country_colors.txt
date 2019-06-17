@@ -6,8 +6,13 @@
     # color3= { 70 50 40  } #Up to 10% -> try map color here
 # }
 
-#Antioch
+GRI = {
+    color1= { 114 25 100 }
+    color2= { 115 15 71 }
+    color3= { 61 8 81  }
+}
 
+#Antioch
 NTI = {
     color1= { 80 20 60  }
     color2= { 70 15 71 }

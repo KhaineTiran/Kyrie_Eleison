@@ -358,7 +358,7 @@ byz_generic_slot_5 = {
 	}
 	has_country_shield = yes
 	
-	reestablish_the_theme_system = {
+	destruction_of_the_turks = {
 		icon = mission_non-western_cavalry_raid
 		required_missions = { recover_the_coast_of_asia_minor }
 		position = 3
@@ -465,7 +465,6 @@ byz_generic_slot_5 = {
 				4315 = { change_province_name = Evdoksia rename_capital = Evdoksia }
 				
 			}
-			custom_tooltip = reestablishing_themes_names_tooltip
 			if = {
 				limit = {
 					NOT = { has_global_flag = constantinople_restored }
@@ -477,17 +476,12 @@ byz_generic_slot_5 = {
 				}
 				set_global_flag = constantinople_restored
 			}
-						
-			add_country_modifier = {
-				name = "the_theme_system"
-				duration = -1
-			}
 		}
 	}
 	
 	convert_asia_minor = {
 		icon = mission_non-western_soldiers
-		required_missions = { reestablish_the_theme_system }
+		required_missions = { destruction_of_the_turks }
 		position = 5
 		provinces_to_highlight = {
 			OR = {

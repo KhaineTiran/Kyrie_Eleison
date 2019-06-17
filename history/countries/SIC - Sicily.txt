@@ -5,6 +5,7 @@ government_rank = 2
 religion = catholic
 primary_culture = sicilian
 add_accepted_culture = neapolitan
+add_accepted_culture = griko
 historical_rival = BYZ
 historical_rival = TUN
 capital = 125	# Palermo
