@@ -5,7 +5,11 @@
     # color2= { 255 255 255  } #30% of character
     # color3= { 70 50 40  } #Up to 10% -> try map color here
 # }
-
+LOT = {
+    color1= { 115 142 235  }
+    color2= { 166 72 67  }
+    color3= { 99 137 163  }
+}
 GRI = {
     color1= { 114 25 100 }
     color2= { 115 15 71 }

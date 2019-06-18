@@ -1,0 +1,11 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = dutch
+religion = catholic
+technology_group = western
+capital = 97 # Amsterdam
+add_accepted_culture = wallonian
+add_accepted_culture = burgundian
+add_accepted_culture = flemish
+historical_rival = FRA
+historical_rival = ENG
