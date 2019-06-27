@@ -1,10 +1,32 @@
 government = monarchy
 add_government_reform = feudalism_reform
-
 primary_culture = cosmopolitan_french
 add_accepted_culture = al_suryah_arabic
 religion = catholic
 technology_group = eastern
 capital = 379	# Jerusalem
 
+historical_friend = ALX
+historical_friend = CYP
 
+1425.7.21 = {
+	monarch = {
+		name = "Conrad VI"
+		dynasty = "Lusignan"
+		birth_date = 1322.12.18
+		adm = 1
+		dip = 1
+		mil = 1
+	}
+	heir = {
+		name = "Conrad"
+		monarch_name = "Conrad  VII"
+		dynasty = "Lusignan"
+		birth_date = 1442.12.18
+		death_date = 1448.10.31
+		claim = 95
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+}

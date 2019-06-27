@@ -197,3 +197,42 @@ ARM_ideas = {
 		production_efficiency = 0.1
 	}
 }
+
+ALX_ideas = {
+	start = {
+		cavalry_cost = -0.1	
+		cavalry_power = 0.15
+	}
+	
+	bonus = {
+		prestige = 1
+	}
+	
+	trigger = {
+		tag = ALX
+	}
+	free = yes
+	
+	a_holy_kingdom = {
+		global_missionary_strength = 0.03
+	}
+	the_alexandrian_tax_reforms = {
+		global_tax_modifier = 0.10
+	}
+	alexandrian_administration = {
+		stability_cost_modifier = -0.1
+	}
+	the_nile_delta = {
+		global_manpower_modifier = 0.15
+	}
+	the_red_sea_connection = {
+		global_trade_power = 0.05
+		trade_range_modifier = 0.10
+	}
+	the_legacy_of_the_crusades = {
+		discipline = 0.05
+	}
+	library_of_alexandria = {
+		global_institution_spread = 0.1
+	}
+}

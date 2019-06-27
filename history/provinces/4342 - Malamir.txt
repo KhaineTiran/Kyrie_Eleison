@@ -2,8 +2,8 @@
 
 owner = ILK
 controller = ILK
-culture = vajrayana
-religion = shiite
+culture = luri
+religion = vajrayana
 capital = "Malamir"
 trade_goods = wool
 hre = no

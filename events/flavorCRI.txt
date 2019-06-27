@@ -1,0 +1,7 @@
+########################################
+# Flavor Events for Crimea
+#
+########################################
+
+namespace = flavor_cri
+normal_or_historical_nations = yes

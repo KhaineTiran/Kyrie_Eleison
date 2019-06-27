@@ -6,7 +6,8 @@ add_accepted_culture = al_misr_arabic
 religion = catholic
 technology_group = eastern
 capital = 358	# Alexandria
-
+historical_friend = KOJ
+historical_friend = CYP
 
 1425.7.21 = {
 	monarch = {

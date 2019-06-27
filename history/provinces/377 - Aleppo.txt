@@ -12,7 +12,6 @@ base_production = 5
 base_manpower = 3
 is_city = yes
 estate = estate_burghers
-add_core = SYR
 add_core = NTI
 fort_15th = yes
 discovered_by = east_african
