@@ -5,27 +5,27 @@ primary_culture = cosmopolitan_french
 add_accepted_culture = al_misr_arabic
 religion = catholic
 technology_group = eastern
-capital = 358	# Alexandria
-historical_friend = GEN
+capital = 361	# Cairo
+historical_friend = KOJ
 
 1425.7.21 = {
 	monarch = {
-		name = "Gilbert I"
-		dynasty = "La Fayette"
-		birth_date = 1392.12.18
-		adm = 3
-		dip = 3
+		name = "George I"
+		dynasty = "Lancaster"
+		birth_date = 1402.12.18
+		adm = 2
+		dip = 4
 		mil = 5
 	}
 	heir = {
-		name = "Gilbert"
-		monarch_name = "Gilbert II"
-		dynasty = "La Fayette"
-		birth_date = 1412.12.18
+		name = "George"
+		monarch_name = "George II"
+		dynasty = "Lancaster"
+		birth_date = 1422.12.18
 		death_date = 1448.10.31
 		claim = 95
 		adm = 2
-		dip = 2
-		mil = 1
+		dip = 3
+		mil = 4
 	}
 }

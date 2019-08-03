@@ -1,9 +1,9 @@
 #2314 - Rahba
 
-owner = ASY
-controller = ASY
+owner = TUO
+controller = TUO
 culture = assyrian
-religion = coptic
+religion = catholic
 capital = "Deir ez-Zor"
 trade_goods = grain
 hre = no
@@ -11,7 +11,7 @@ base_tax = 1
 base_production = 1
 base_manpower = 1
 is_city = yes
-add_core = FAD
+add_core = TUO
 add_core = ASY
 discovered_by = muslim
 discovered_by = ottoman

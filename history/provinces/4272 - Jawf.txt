@@ -1,7 +1,7 @@
 #4172 - Jawf
 
-owner = HED
-controller = HED
+owner = ANZ
+controller = ANZ
 culture = bedouin_arabic
 religion = sunni
 capital = "Karah"
@@ -13,7 +13,6 @@ base_manpower = 2
 is_city = yes
 add_core = ANZ
 add_core = FAD
-add_core = HED
 discovered_by = east_african
 discovered_by = muslim
 discovered_by = ottoman

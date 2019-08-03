@@ -335,7 +335,7 @@ AQT_ideas = {
 	the_flower_of_chivalry = {
 		cavalry_power = 0.15
 	}
-	angevin _empire = {
+	angevin_empire = {
 		idea_cost = -0.1
 	}
 	laws_of_charles = {
@@ -349,5 +349,43 @@ AQT_ideas = {
 	}
 	the_black_duke = {
 		prestige = 1
+	}
+}
+
+HAS_ideas = {
+	start = {
+		global_spy_defence = 0.25
+		hostile_attrition = 1
+	}
+	
+	bonus = {
+		global_garrison_growth = 0.1
+	}
+	
+	trigger = {
+		tag = HAS
+	}
+	free = yes
+	
+	hashshashins_creed  = {
+		spy_offence = 0.20
+	}
+	avoid_bloodshed = {
+		diplomats = 1
+	}
+	the_ismailis_dar_al-hijra = {
+		defensiveness = 0.3
+	}
+	mountain_fortresses = {
+		enemy_core_creation = 1
+	}
+	a_dagger_and_a_note = {
+		diplomatic_reputation = 2
+	}
+	murder_in_the_open = {
+		rebel_support_efficiency = 0.5
+	}
+	revive_the_jihad_of_hassan = {
+		global_manpower_modifier = 0.1
 	}
 }

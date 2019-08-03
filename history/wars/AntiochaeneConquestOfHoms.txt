@@ -1,0 +1,17 @@
+name = "Antiochene invasion of Homs"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 4297 # Homs
+}
+
+1444.1.1 = {
+	add_attacker = NTI
+	add_defender = HAS
+}
+
+# Peace
+1447.5.1 = {
+	rem_attacker = NTI
+	rem_defender = HAS
+}

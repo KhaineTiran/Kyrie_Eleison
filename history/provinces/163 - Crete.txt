@@ -1,7 +1,7 @@
 #163 - Crete
 
-owner = TEM
-controller = TEM
+owner = GEN
+controller = GEN
 culture = greek
 religion = orthodox
 capital = "Heraklion"
@@ -13,7 +13,7 @@ base_manpower = 3
 is_city = yes
 add_core = BYZ
 add_core = CRT
-add_core = TEM
+add_core = GEN
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

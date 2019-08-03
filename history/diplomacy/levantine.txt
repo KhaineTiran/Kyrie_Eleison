@@ -1,0 +1,20 @@
+vassal = {
+	first = KOJ
+	second = LEB
+	start_date = 1380.8.13
+	end_date = 1455.12.31
+}
+
+vassal = {
+	first = HED
+	second = ANZ
+	start_date = 1380.8.13
+	end_date = 1455.12.31
+}
+
+alliance = {
+    first = KOJ
+    second = TUO
+    start_date = 1420.8.13
+    end_date = 1555.12.31
+}

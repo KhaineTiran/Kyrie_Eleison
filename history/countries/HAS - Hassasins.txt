@@ -1,0 +1,21 @@
+government = theocracy
+add_government_reform = iqta
+primary_culture = al_suryah_arabic
+religion = shiite
+government_rank = 1
+technology_group = muslim
+capital = 4297	# Homs
+religious_school = ismaili_school
+
+1442.1.16 = {
+	monarch = {
+		name = "Al Mualim"
+		dynasty = "Ibn-La'Ahad"
+		adm = 3
+		dip = 4
+		mil = 4
+	}
+	add_piety = -1
+	clear_scripted_personalities = yes
+	add_ruler_personality = zealot_personality
+}

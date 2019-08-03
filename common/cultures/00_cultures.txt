@@ -8465,7 +8465,7 @@ egyptian_culture_group = {
 	}
 }
 
-turkish_culture_group = {
+turko_semitic = {
 	graphical_culture = muslimgfx
 	turkish = {
 		primary = SEL

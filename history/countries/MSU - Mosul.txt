@@ -1,0 +1,30 @@
+government = monarchy
+add_government_reform = feudalism_reform
+
+primary_culture = normand
+add_accepted_culture = kurdish
+religion = catholic
+technology_group = ottoman
+capital = 411	# Mosul
+
+1430.9.16 = {
+	monarch = {
+		name = "Henri I"
+		dynasty = "Hauteville"
+		birth_date = 1390.12.3
+		adm = 4
+		dip = 5
+		mil = 3
+	}
+	heir = {
+		name = "Henri"
+		monarch_name = "Henri II"
+		dynasty = "Hauteville"
+		birth_date = 1413.2.22
+		death_date = 1461.7.22
+		claim = 95
+		adm = 4
+		dip = 2
+		mil = 4
+	}
+}

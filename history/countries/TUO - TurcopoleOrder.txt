@@ -1,0 +1,26 @@
+government = theocracy
+add_government_reform = monastic_order_reform
+government_rank = 1
+primary_culture = al_suryah_arabic
+religion = catholic
+technology_group = ottoman
+historical_friend = KOJ
+capital = 405	# Tumor
+
+add_army_professionalism = 0.1
+
+1441.1.1 = {
+	monarch = {
+		name = "Süleyman Doukas"
+		birth_date = 1403.1.1
+		culture = turkish
+		adm = 2
+		dip = 1
+		mil = 2
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = silver_tongue_personality
+}
+
+
+

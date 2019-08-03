@@ -1,9 +1,9 @@
 #4397 - Homs
 
-owner = NTI
-controller = NTI
+owner = HAS
+controller = HAS
 culture = al_suryah_arabic
-religion = orthodox
+religion = shiite
 capital = "Homs"
 trade_goods = cotton
 hre = no
@@ -11,7 +11,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 1
 is_city = yes
-add_core = FAD
+add_core = HAS
 add_core = NTI
 discovered_by = east_african
 discovered_by = muslim

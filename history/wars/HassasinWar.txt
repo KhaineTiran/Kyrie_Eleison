@@ -1,0 +1,17 @@
+name = "Hassasin war"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 562 # Koch
+}
+
+1440.1.1 = {
+	add_attacker = KOJ
+	add_defender = HAS
+}
+
+# Peace
+1444.1.1 = {
+	rem_attacker = KOJ
+	rem_defender = HAS
+}

@@ -1,9 +1,9 @@
 #405 - Tadmor
 
-owner = FAD
-controller = FAD
-culture = bedouin_arabic
-religion = sunni
+owner = TUO
+controller = TUO
+culture = al_suryah_arabic
+religion = catholic
 capital = "Tadmuriyah"
 trade_goods = livestock
 hre = no
@@ -12,6 +12,7 @@ base_production = 1
 base_manpower = 2
 is_city = yes
 add_core = FAD
+add_core = TUO
 discovered_by = east_african
 discovered_by = muslim
 discovered_by = ottoman
