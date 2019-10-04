@@ -2,7 +2,7 @@
 
 owner = KOJ
 controller = KOJ
-culture = al_suryah_arabic
+culture = outremer
 religion = catholic
 capital = "Al Quds"
 trade_goods = grain

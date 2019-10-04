@@ -8447,6 +8447,27 @@ syriac_culture_group = {
 			Gethsemane Mariet Martella Martelle Marth Marthand Marthena Martie Martyne Martynne Tabatha Tabita Tada Talita Tami Tammy Tavis
 		}
 	}
+	outremer = {
+		primary = KOJ
+		dynasty_names = {
+			Thathoul "of Courtenay"	"l'Arménien" "l'Arvanite" "de la Morée" "de la Crète" "de Vaspurakan" "Le Copte" "Le Levantin" "du Sinaï" "de Serapion" "de Sudhaile" "de Konai" Romanus "de Hebraeus" Warda  Ebedjesu "de Villeneuve" Balliol "de Chypre" "de Harenc" "de Tiberiade" "de Montjoy" Caiphas Lusignan Rethel Anjou Boulogne
+
+		}
+		male_names = {
+			Abelard_Abelard Adam_Adam Adelard_Adalhard Ademar Alexander  Alfons Alphonse Amaury Amalric Anfroi Anquetil Anselm_Anselm Armand Arnald Arnold Asclettin Aubrey Baldwin Bernard Berold Bertran Bertrand Beuves Blayve Blaise Bohemond Botolf_Botulf Clemence Clement Drogo Errand Eustache_Eustace Faramond Ferant_Ferdinand Filbert
+			Fulk_Folke Fraunk Frery Gaillard Gaufrid Geoffroy Godfrey Gerald Gerard Gérard Geraud Gerald Gerbert Gervas Giffard Gilbert
+			Godfrey Goubert Guntard Guy Haimo Hamelin Henry_Henry Herbert Herman Hubert Hugh Humbert Humphrey Ildebrando Hildebrand Jordan Joscelin 
+			Lambert Lancelin Mauger Nigel Norman Odo Otto Orderic Osbern Osmond Oswulf Oswyn Radolf_Ralph Radulf Ralph Randolf Ranulf Raymond Rayne Rainer
+			Richard_Richard  Robert Roger Rolland Roscelin Sayer Serlo Serril Sewal Silvester_Silvester Simon_Simon Stefen_Stephen Tancred_Tancredi Torf Turold Turquetil Turstin Tybalt Theobald Walter William Wymund Geldemar Jean Renaud Conrad
+		}
+		female_names = {
+			Adelaide  Adele Adela Adelin Adeline Adelise Agnes Alberada Alienora Eleanor Aline Alisce Alice Alison Amburga Aubrey Aveis Avelina Berengaria
+			Busilla Clarimond Clemenza Clementia Constance Cundo Egelina Eleanor Elise Elizabeth Elysande Emelenine Emma Emonie Eremberga Ermyntrude
+			Felicia Flandina Fredesende Fressenda Fressende Geva Giselle Gisela Gohilde Griselda Gundred Hadwis Helewisa Heria Herleve Hermessent Ermesinda Hermine Hugolina
+			Ida Judit Judith Lesceline Mabel Marie Maria Matheode Matilda Matilda Maud Matilda Mautild Maysant Millicent Muriella Oriel Richenda Ricarda
+			Rosalind Selova Stephanie Stephania Sibyl Sibylla Sibylla Sibylla Umfreda Valdrade Wilmot Yolanda Yolanda Yvon Yvonne 
+		}
+	}
 }
 
 egyptian_culture_group = {

@@ -11,7 +11,7 @@ add_army_professionalism = 0.1
 
 1441.1.1 = {
 	monarch = {
-		name = "Süleyman Doukas"
+		name = "Alexios Doukas"
 		birth_date = 1403.1.1
 		culture = turkish
 		adm = 2

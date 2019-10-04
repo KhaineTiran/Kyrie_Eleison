@@ -1,0 +1,28 @@
+government = monarchy
+add_government_reform = feudalism_reform
+primary_culture = al_suryah_arabic
+religion = catholic
+technology_group = muslim
+capital = 378
+
+1425.7.21 = {
+	monarch = {
+		name = "Baldwin I"
+		dynasty = "Romanus"
+		birth_date = 1389.12.18
+		adm = 2
+		dip = 2
+		mil = 2
+	}
+	heir = {
+		name = "Baldwin"
+		monarch_name = "Baldwin II"
+		dynasty = "Romanus"
+		birth_date = 1422.12.18
+		death_date = 1448.10.31
+		claim = 95
+		adm = 2
+		dip = 3
+		mil = 1
+	}
+}

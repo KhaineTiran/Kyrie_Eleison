@@ -352,7 +352,7 @@ AQT_ideas = {
 	}
 }
 
-HAS_ideas = {
+HAO_ideas = {
 	start = {
 		global_spy_defence = 0.25
 		hostile_attrition = 1
@@ -363,7 +363,7 @@ HAS_ideas = {
 	}
 	
 	trigger = {
-		tag = HAS
+		tag = HAO
 	}
 	free = yes
 	

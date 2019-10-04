@@ -1,7 +1,7 @@
 #4397 - Homs
 
-owner = HAS
-controller = HAS
+owner = HAO
+controller = HAO
 culture = al_suryah_arabic
 religion = shiite
 capital = "Homs"
@@ -11,7 +11,7 @@ base_tax = 2
 base_production = 2
 base_manpower = 1
 is_city = yes
-add_core = HAS
+add_core = HAO
 add_core = NTI
 discovered_by = east_african
 discovered_by = muslim

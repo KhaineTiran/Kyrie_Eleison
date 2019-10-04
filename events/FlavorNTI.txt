@@ -13,7 +13,7 @@ country_event = {
 		tag = NTI
 		#Flag not raised
 		NOT = { has_country_flag = letter_to_adelaide }
-		war_with = HAS
+		war_with = HAO
 		4297 = {
 			sieged_by = ROOT
 		}
@@ -28,7 +28,6 @@ country_event = {
 	option = {
 		name = "nti_events.1.a"
 		#raise flag
-		add_manpower = -2
-		set_country_flag = recent_BYZ_factions
+		add_manpower = -3
 	}
 }
