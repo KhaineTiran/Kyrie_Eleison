@@ -1,4 +1,4 @@
-namespace = flavor_byz
+namespace = flavor_NTI
 normal_or_historical_nations = yes
 
 #Siege of Homs
