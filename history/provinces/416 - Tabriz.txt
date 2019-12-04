@@ -2,7 +2,7 @@
 
 owner = ILK
 controller = ILK
-culture = mongol
+culture = persian
 religion = vajrayana
 capital = "Tabriz"
 trade_goods = silk

@@ -19,17 +19,19 @@ byz_western = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				area = morea_area
+				province_id = 146
+				province_id = 145
+				province_id = 1773
 				area = northern_greece_area
 				area = macedonia_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			morea_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			owns_or_non_sovereign_subject_of = 146
+			owns_or_non_sovereign_subject_of = 1773
+			owns_or_non_sovereign_subject_of = 145
+
 			northern_greece_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -248,20 +250,14 @@ byz_east = {
 		required_missions = {  }
 		provinces_to_highlight = {
 			OR = {
-				area = hudavendigar_area
-				area = aydin_area
+				province_id = 327
+				province_id = 2302
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			hudavendigar_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			aydin_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			owns_or_non_sovereign_subject_of = 327
+			owns_or_non_sovereign_subject_of = 327
 		}
 		effect = {
 			if = {
@@ -308,6 +304,7 @@ byz_east = {
 					}
 					add_permanent_claim = ROOT
 				}
+
 				erzurum_area = {
 					limit = {
 						NOT = { is_core = ROOT }
@@ -315,6 +312,7 @@ byz_east = {
 					}
 					add_permanent_claim = ROOT
 				}
+				add_permanent_claim = 321
 				add_permanent_claim = 327 # Adana
 				add_permanent_claim = 2302 # Icel
 				add_permanent_claim = 2750 # Plovdiv
@@ -342,6 +340,7 @@ byz_east = {
 					}
 					add_permanent_claim = ROOT
 				}
+				add_permanent_claim = 321
 			}
 		}
 	}
@@ -479,51 +478,13 @@ byz_generic_slot_5 = {
 		}
 	}
 	
-	convert_asia_minor = {
-		icon = mission_non-western_soldiers
-		required_missions = { destruction_of_the_turks }
-		position = 5
-		provinces_to_highlight = {
-			OR = {
-				area = aydin_area
-				area = hudavendigar_area
-			}
-			OR = {
-				NOT = { religion = orthodox }
-				NOT = { owned_by = ROOT }
-			}
-		}
-		trigger = {
-			religion = orthodox
-			aydin_area = {
-				type = all
-				owned_by = ROOT
-				religion = orthodox
-			}
-			hudavendigar_area = {
-				type = all
-				owned_by = ROOT
-				religion = orthodox
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				name = "growth_of_the_orthodox_church"
-				duration = 7300
-			}
-			add_patriarch_authority = 0.1
-			add_permanent_claim = 358
-			add_permanent_claim = 379
-			add_permanent_claim = 2313
-		}
-	}
+	
 	
 	the_pentarchy = {
 		icon = mission_empire
 		position = 7
 		required_missions = {
 			recover_rome
-			convert_asia_minor
 		}
 		provinces_to_highlight = {
 			OR = {

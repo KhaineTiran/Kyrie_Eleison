@@ -1,7 +1,113 @@
-########################################
-# Flavor Events for Crimea
-#
-########################################
 
-namespace = flavor_cri
+namespace = crimean
 normal_or_historical_nations = yes
+
+country_event = {
+	id = crimean.1
+	title = crimean.1.t
+	desc = crimean.1.d
+	picture = RELIGION_eventPicture
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		tag = CRI
+		exists = BYZ
+		is_free_or_tributary_trigger = yes
+		is_at_war = no
+		BYZ = {
+			is_free_or_tributary_trigger = yes
+			num_of_ports = 1
+		}
+		NOT = { has_global_flag = death_of_haji_giray } #Also set in history.
+	}
+
+	immediate = { set_global_flag = death_of_haji_giray }
+
+	option = {
+		#Offer to convert to orthodoxy
+		name = "crimean.1.a"
+		ai_chance = {
+			factor = 100
+		}
+		BYZ = { 
+			country_event = { id = crimean.3 days = 1 } 
+		}
+	}
+	option = {
+	#Refuse to convert
+		name = "crimean.1.b"
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Rhomania gets asked to pay 300 gold to convert the khanate
+country_event = {
+	id = crimean.3
+	title = crimean.3.t
+	desc = crimean.3.d
+	picture = MONGOL_BANNERS_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		ai_chance = { factor = 10 }
+		name = "crimean.3.a"
+		add_treasury = -200
+		CRI = {
+			country_event = { id = crimean.5 days = 5 }
+		}
+	}
+	option = {
+		ai_chance = { factor = 0 }
+		name = "crimean.3.b" 
+		CRI = {
+			country_event = { id = crimean.4 days = 5 }
+		}
+	}
+
+}
+#Rhomania refuses, give relationship[ modifier -50]
+country_event = {
+	id = crimean.4
+	title = crimean.4.t
+	desc = crimean.4.d
+	picture = RELIGION_eventPicture
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = "crimean.4.a" 
+		add_opinion = {
+    		who = ROOT
+    		modifier =  refused_conversion_offer
+		}
+	}
+}
+
+#Rhomania agrees, gives 300 gold, 
+country_event = {
+	id = crimean.5
+	title = crimean.5.t
+	desc = crimean.5.d
+	picture = RELIGION_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = "crimean.5.a" 
+		add_treasury = 200
+		change_religion = orthodox
+		add_country_modifier = {
+			name = "religious_conversion"
+			duration = 9000
+		}
+		capital_scope = {
+			change_religion = orthodox
+			add_permanent_province_modifier = {
+				name = "religious_zeal_at_conv"
+				duration = 9000
+			}
+		}
+
+	}
+}

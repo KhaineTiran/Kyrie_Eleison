@@ -4,6 +4,17 @@ government_rank = 1
 primary_culture = hannoverian
 religion = catholic
 technology_group = western
-capital = 163 # Crete
+capital = 321 # Cyprus
 historical_friend = KOJ
 add_army_professionalism = 0.1
+
+1431.1.1 = {
+	monarch = {
+		name = "Frederick Maria von Este"
+		birth_date = 1383.1.1
+		culture = austrian
+		adm = 4
+		dip = 4
+		mil = 4
+	}
+}

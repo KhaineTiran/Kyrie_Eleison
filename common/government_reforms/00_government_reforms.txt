@@ -1552,41 +1552,6 @@ celestial_empire_legacy = {
 }
 
 
-# Ottoman Empire
-ottoman_government_legacy = {
-	# government mechanics flags go here
-	allow_normal_conversion = no
-	icon = "crown"
-	legacy_government = yes
-	monarchy = yes
-	maintain_dynasty = yes
-	valid_for_new_country = no
-	allow_convert = no
-	valid_for_nation_designer = yes
-	nation_designer_cost = 20
-	nation_designer_trigger = {
-		religion_group = muslim
-	}
-
-
-	modifiers = {
-		max_states = 5
-		unjustified_demands = -0.1
-		legitimacy = 0.5
-		max_absolutism = 5
-	}
-
-	conditional = {
-		allow = { has_dlc = "Cradle of Civilization" }
-		has_harem = yes
-		has_pashas = yes
-	}
-
-	ai = {
-		factor = 5
-	}
-}
-
 prussian_monarchy_legacy = {
 	# government mechanics flags go here
 	allow_normal_conversion = no

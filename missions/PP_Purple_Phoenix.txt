@@ -91,6 +91,7 @@ byz_pp_balkans_north_italy = {
 			}
 		}
 	}
+
 	
 	recover_western_balkans = {
 		icon = mission_pf_cross
@@ -385,14 +386,22 @@ byz_pp_maritime = {
 			
 		}
 		provinces_to_highlight = {
-			area = aegean_archipelago_area
+			
+			OR = {
+				area = aegean_archipelago_area
+				province_id = 163
+			}
+			
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			
+			owns_or_non_sovereign_subject_of = 163
 			aegean_archipelago_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
+
 		}
 		effect = {
 			corsica_sardinia_area = {
@@ -600,59 +609,28 @@ byz_pp_religion = {
 	}
 	has_country_shield = yes
 	
-	convert_asia_minor_pp = {
-		icon = mission_pf_cross
-		position = 2
-		required_missions = {
-			recover_the_coast_of_asia_minor
-		}
+	retake_cyprus = {
+		icon = mission_non-western_soldiers
+		required_missions = { recover_the_coast_of_asia_minor }
+		position = 5
 		provinces_to_highlight = {
-			OR = {
-				area = aydin_area
-				area = hudavendigar_area
-			}
-			OR = {
-				NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				NOT = { religion = orthodox }
-			}
+			province_id = 321
 		}
 		trigger = {
-			religion = orthodox
-			aydin_area = {
-				type = all
-				owned_by = ROOT
-				religion = orthodox
-			}
-			hudavendigar_area = {
-				type = all
-				owned_by = ROOT
-				religion = orthodox
-			}
+			owns = 321
 		}
-		
 		effect = {
-			add_patriarch_authority = 0.1
-			aleppo_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			syria_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			add_permanent_claim = 358
+			add_permanent_claim = 379
+			add_permanent_claim = 2313
 		}
 	}
+
 	recover_antioch = {
 		icon = mission_pf_cross
 		position = 4
 		required_missions = {
-			convert_asia_minor_pp
+			retake_cyprus
 			recover_central_anatolia
 		}
 		provinces_to_highlight = {
@@ -673,6 +651,10 @@ byz_pp_religion = {
 			}
 		}
 		effect = {
+			add_country_modifier = {
+				name = "growth_of_the_orthodox_church"
+				duration = 7300
+			}
 			add_patriarch_authority = 0.1
 			palestine_area = {
 				limit = {
@@ -1037,7 +1019,6 @@ byz_pp_east = {
 				4314 = { change_province_name = Justinianopolis rename_capital = Justinianopolis }
 				4315 = { change_province_name = Evdoksia rename_capital = Evdoksia }
 			}
-			custom_tooltip = reestablishing_themes_names_tooltip
 			if = {
 				limit = {
 					NOT = { has_global_flag = constantinople_restored }
@@ -1048,10 +1029,6 @@ byz_pp_east = {
 					add_base_manpower = 3
 				}
 				set_global_flag = constantinople_restored
-			}	
-			add_country_modifier = {
-				name = "the_theme_system"
-				duration = -1
 			}
 		}
 	}

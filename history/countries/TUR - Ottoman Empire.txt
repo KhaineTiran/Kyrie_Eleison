@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = ottoman_government
+add_government_reform = autocracy_reform
 primary_culture = turkish
 add_accepted_culture = bulgarian
 add_accepted_culture = greek
